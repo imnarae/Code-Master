@@ -12,9 +12,9 @@ def solution(N, stages):
             
         user = user - cnt
         
-    sorted_stages = sorted(fail.items(), key=lambda x: (-x[1], x[0])) 
+    sort_stages = sorted(fail.items(), key=lambda x: (-x[1], x[0])) 
     
-    for stage in sorted_stages:
-        answer.append(stage[0])
+    for s in sort_stages:
+        answer.append(s[0])
     
     return answer
